@@ -9,7 +9,7 @@ function Navbar() {
           <h1 className="text-2xl font-medium text-neutral-500">Bookstore.</h1>
         </div>
         <SearchBar />
-        <ul className="-mr-2 flex items-center gap-x-5 font-medium text-neutral-400 text-neutral-500">
+        <ul className="-mr-2 flex items-center gap-x-5 font-medium  text-neutral-500">
           <li className="px-2 py-1">Books</li>
           <li className="px-2 py-1">About</li>
           <li className="px-2 py-1">
