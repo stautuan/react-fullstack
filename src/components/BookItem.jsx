@@ -1,4 +1,4 @@
-import book from "../../public/images/book-1.jpeg";
+import book from "/images/book-1.jpeg";
 
 function BookItem() {
   return (
