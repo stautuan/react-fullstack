@@ -5,7 +5,11 @@ export default {
     fontFamily: {
       sans: "Roboto, sans-serif",
     },
-    extend: {},
+    extend: {
+      backgroundImage: {
+        hero: "url('/images/hero-bg.jpg')",
+      },
+    },
   },
   plugins: [],
 };

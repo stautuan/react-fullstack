@@ -3,7 +3,7 @@ import SearchBar from "./SearchBar";
 
 function Navbar() {
   return (
-    <nav className="bg-stone-200">
+    <nav className="border-b-2 border-stone-300 bg-stone-200">
       <div className="container mx-auto flex items-center justify-between  px-2.5 py-4">
         <div>
           <h1 className="text-2xl font-medium text-stone-500">Bookstore.</h1>
