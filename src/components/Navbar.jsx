@@ -6,7 +6,7 @@ function Navbar() {
     <nav className="border-b-2 border-neutral-300 bg-neutral-200">
       <div className="container mx-auto flex items-center justify-between  px-2.5 py-4">
         <div>
-          <h1 className="text-2xl font-medium text-neutral-500">Bookstore.</h1>
+          <h1 className="text-2xl font-medium text-neutral-500">bookstore.</h1>
         </div>
         <SearchBar />
         <ul className="-mr-2 flex items-center gap-x-5 font-medium  text-neutral-500">

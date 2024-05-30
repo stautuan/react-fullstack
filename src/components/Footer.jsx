@@ -3,7 +3,7 @@ function Footer() {
     <footer className="bg-neutral-200">
       <div className="py-4">
         <p className="text-center text-xs text-neutral-500">
-          Copyright © 2024 Stacy Tautuan
+          Copyright © 2024 bookstore.
         </p>
       </div>
     </footer>
