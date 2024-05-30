@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 html {
-  @apply text-gray-700 antialiased;
+  @apply text-neutral-900 antialiased;
 }

@@ -2,8 +2,8 @@ import BookItem from "./BookItem";
 
 function BookList() {
   return (
-    <section className="text-neutral-900">
-      <div className="container mx-auto px-2.5 pb-32">
+    <section>
+      <div className="container mx-auto px-4 pb-32">
         <div>
           <h3 className="py-20 text-center text-xl font-medium">
             Featured Books
