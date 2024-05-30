@@ -8,6 +8,10 @@ function App() {
       <Navbar />
       <Home />
       <Footer />
+      TODO:
+      {/* router */}
+      {/* create app layout */}
+      {/* create books data */}
     </>
   );
 }
