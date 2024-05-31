@@ -7,7 +7,7 @@
       "category": ["Science Fiction", "Fantasy"],
       "format": "Paperback",
       "pageCount": 672,
-      "price": "$3.00",
+      "unitPrice": "$3.00",
       "imgUrl": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1555447414i/44767458.jpg",
       "description": "Brunch raclette vexillologist post-ironic glossier ennui XOXO mlkshk godard pour-over blog tumblr humblebrag. Blue bottle put a bird on it twee prism biodiesel brooklyn. Blue bottle ennui tbh succulents.",
       "condition": "Like New"
@@ -19,7 +19,7 @@
       "category": ["Vampire Romance"],
       "format": "Hardback",
       "pageCount": 412,
-      "price": "$3.00",
+      "unitPrice": "$3.00",
       "imgUrl": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1361039438i/1162543.jpg",
       "description": "Umami chambray gentrify, fit fam ennui bushwick cronut. Portland cloud bread iPhone synth lyft readymade retro post-ironic vexillologist freegan snackwave meh flexitarian pitchfork williamsburg. Marfa iceland grailed vape vibecession.",
       "condition": "Like New"
@@ -31,7 +31,7 @@
       "category": ["Fantasy"],
       "format": "Paperback",
       "pageCount": 361,
-      "price": "$2.00",
+      "unitPrice": "$2.00",
       "imgUrl": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1390503203i/18335700.jpg",
       "description": "Synth cupping truffaut iceland twee. Bitters squid unicorn, tbh semiotics migas waistcoat stumptown subway tile cray typewriter plaid chicharrones yes plz flannel. Vegan gochujang snackwave neutral milk hotel cloud bread brunch fam next level slow-carb chillwave intelligentsia austin mumblecore unicorn. ",
       "condition": "Like New"
@@ -43,7 +43,7 @@
       "category": ["Business"],
       "format": "Hardback",
       "pageCount": 274,
-      "price": "$4.00",
+      "unitPrice": "$4.00",
       "imgUrl": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1460910517i/26156469.jpg",
       "description": "Tbh tote bag coloring book, trust fund slow-carb tonx forage everyday carry jawn lumbersexual mukbang cliche iceland copper mug solarpunk. Farm-to-table single-origin coffee keffiyeh meh gluten-free direct trade cloud bread freegan hexagon DSA. ",
       "condition": "Like New"
@@ -55,7 +55,7 @@
       "category": ["Horror, Dystopia"],
       "format": "Paperback",
       "pageCount": 370,
-      "price": "$3.00",
+      "unitPrice": "$3.00",
       "imgUrl": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1309212400i/9014.jpg",
       "description": "Skateboard mumblecore wolf fit scenester. Microdosing locavore humblebrag tumblr single-origin coffee praxis. Brooklyn sustainable vinyl flannel everyday carry cupping locavore mixtape readymade pour-over lo-fi.",
       "condition": "Like New"
@@ -67,7 +67,7 @@
       "category": ["Fantasy"],
       "format": "Paperback",
       "pageCount": 666,
-      "price": "$3.00",
+      "unitPrice": "$3.00",
       "imgUrl": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1548497031i/55399.jpg",
       "description": "Biodiesel subway tile health goth next level same man bun, taiyaki put a bird on it yes plz keffiyeh glossier pop-up neutra deep v. Health goth vibecession selfies, letterpress live-edge grailed pabst authentic lumbersexual. Hashtag cliche locavore glossier.",
       "condition": "Like New"
@@ -79,7 +79,7 @@
       "category": ["Fantasy"],
       "format": "Paperback",
       "pageCount": 529,
-      "price": "$2.00",
+      "unitPrice": "$2.00",
       "imgUrl": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1450644818i/28253762.jpg",
       "description": "Mukbang gatekeep irony praxis meh gastropub shoreditch palo santo cray prism blackbird spyplane dreamcatcher banh mi. Master cleanse messenger bag af, craft beer ennui portland big mood flexitarian franzen irony bicycle rights.",
       "condition": "Like New"
@@ -91,7 +91,7 @@
       "category": ["Spirituality"],
       "format": "Paperback",
       "pageCount": 518,
-      "price": "$3.00",
+      "unitPrice": "$3.00",
       "imgUrl": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1386926868i/26163.jpg",
       "description": "VHS activated charcoal flannel chicharrones swag portland austin salvia beard dreamcatcher art party. Biodiesel irony austin farm-to-table keffiyeh praxis. Tonx flexitarian tousled keffiyeh. Fixie narwhal biodiesel, distillery bitters fam viral.",
       "condition": "Like New"
@@ -103,7 +103,7 @@
       "category": ["Fantasy"],
       "format": "Paperback",
       "pageCount": 676,
-      "price": "$2.00",
+      "unitPrice": "$2.00",
       "imgUrl": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1348738842i/104089.jpg",
       "description": "Keffiyeh forage cronut raclette iceland unicorn yr af wayfarers vibecession direct trade cloud bread bodega boys chicharrones. Praxis pickled four dollar toast fam meditation. Portland cloud bread iPhone synth lyft readymade retro post-ironic vexillologist freegan snackwave meh flexitarian.",
       "condition": "Like New"
@@ -115,7 +115,7 @@
       "category": ["Humor"],
       "format": "Paperback",
       "pageCount": 387,
-      "price": "$3.00",
+      "unitPrice": "$3.00",
       "imgUrl": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1331323415i/33456.jpg",
       "description": "Vegan gochujang snackwave neutral milk hotel cloud bread brunch fam next level slow-carb chillwave intelligentsia austin mumblecore unicorn. Palo santo big mood grailed cliche, gentrify JOMO try-hard taiyaki wayfarers celiac mlkshk next level semiotics lo-fi.",
       "condition": "Like New"
