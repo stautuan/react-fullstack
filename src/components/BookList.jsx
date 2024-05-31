@@ -9,7 +9,9 @@ function BookList() {
   useEffect(() => {
     async function getBooks() {
       try {
-        const response = await fetch("http://localhost:8000/books/");
+        const response = await fetch(
+          "http://localhost:8000/books?_start=0&_limit=4",
+        );
         const data = await response.json();
         setBooks(data);
       } catch (error) {
