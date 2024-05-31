@@ -8,7 +8,7 @@ function App() {
       <Navbar />
       <Home />
       <Footer />
-      TODO:
+      {/* TODO: */}
       {/* router */}
       {/* create app layout */}
       {/* create books data */}
