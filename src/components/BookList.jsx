@@ -1,13 +1,12 @@
 import { useEffect, useState } from "react";
 import BookItem from "./BookItem";
-import { Link } from "react-router-dom";
 
 function BookList() {
   const [books, setBooks] = useState([]);
   const [selectedBook, setSelectedBook] = useState(null);
 
   useEffect(() => {
-    async function getBooks() {
+    async function getFeaturedBooks() {
       try {
         const response = await fetch(
           "http://localhost:8000/books?_start=0&_limit=4",
@@ -18,26 +17,20 @@ function BookList() {
         console.error(error);
       }
     }
-    getBooks();
+    getFeaturedBooks();
   }, []);
 
   return (
     <div className="container mx-auto  px-4 pb-32">
       <h3 className="py-20 text-center text-xl font-medium">Featured Books</h3>
-
       <div className="grid grid-cols-2 gap-3 md:grid-cols-4">
         {books.map((book) => (
-          <>
-            <Link to="/books/:id">
-              {" "}
-              <BookItem
-                key={book.id}
-                book={book}
-                selectedBook={selectedBook}
-                onSelectedBook={setSelectedBook}
-              />
-            </Link>
-          </>
+          <BookItem
+            key={book.id}
+            book={book}
+            selectedBook={selectedBook}
+            onSelectedBook={setSelectedBook}
+          />
         ))}
       </div>
     </div>

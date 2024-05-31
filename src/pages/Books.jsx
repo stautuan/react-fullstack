@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import BookItem from "../components/BookItem";
-import { Link } from "react-router-dom";
 
 function Books() {
   const [books, setBooks] = useState([]);
@@ -23,12 +22,7 @@ function Books() {
       <h3 className="py-20 text-center text-xl font-medium">Books</h3>
       <div className="grid grid-cols-2 gap-3 md:grid-cols-4">
         {books.map((book) => (
-          <>
-            <Link to="/books/:id">
-              {" "}
-              <BookItem key={book.id} book={book} />
-            </Link>
-          </>
+          <BookItem key={book.id} book={book} />
         ))}
       </div>
     </div>

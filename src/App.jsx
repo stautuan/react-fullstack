@@ -4,7 +4,7 @@ import Home from "./pages/Home";
 import AppLayout from "./components/AppLayout";
 import Books from "./pages/Books";
 import About from "./pages/About";
-import BookInfo from "./components/BookInfo";
+import BookInfo from "./pages/BookInfo";
 import Error from "./pages/Error";
 
 const router = createBrowserRouter([
@@ -17,17 +17,17 @@ const router = createBrowserRouter([
         errorElement: <Error />,
       },
       {
-        path: "/books",
+        path: "books",
         element: <Books />,
         errorElement: <Error />,
       },
       {
-        path: "/about",
+        path: "about",
         element: <About />,
         errorElement: <Error />,
       },
       {
-        path: "/books/:id",
+        path: "books/:bookId",
         element: <BookInfo />,
         errorElement: <Error />,
       },

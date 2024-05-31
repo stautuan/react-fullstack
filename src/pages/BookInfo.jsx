@@ -1,7 +1,9 @@
 function BookInfo({ book }) {
   return (
     <section>
-      <div>{book.title}</div>
+      <div>
+        <p>{book.title}</p>
+      </div>
     </section>
   );
 }
