@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import BookItem from "../components/BookItem";
 import { Link } from "react-router-dom";
 
-function BooksPage() {
+function Books() {
   const [books, setBooks] = useState([]);
   // const [selectedBook, onSelectedBook] = useState(null);
 
@@ -35,4 +35,4 @@ function BooksPage() {
   );
 }
 
-export default BooksPage;
+export default Books;
