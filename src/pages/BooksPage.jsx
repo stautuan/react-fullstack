@@ -19,23 +19,19 @@ function BooksPage() {
     getBooks();
   }, []);
   return (
-    <section>
-      <div className="container mx-auto px-4 pb-32">
-        <div>
-          <h3 className="py-20 text-center text-xl font-medium">Books</h3>
-        </div>
-        <div className="grid grid-cols-2 gap-3 md:grid-cols-4">
-          {books.map((book) => (
-            <>
-              <Link to="/books/:id">
-                {" "}
-                <BookItem key={book.id} book={book} />
-              </Link>
-            </>
-          ))}
-        </div>
+    <div className="container mx-auto px-4 pb-32">
+      <h3 className="py-20 text-center text-xl font-medium">Books</h3>
+      <div className="grid grid-cols-2 gap-3 md:grid-cols-4">
+        {books.map((book) => (
+          <>
+            <Link to="/books/:id">
+              {" "}
+              <BookItem key={book.id} book={book} />
+            </Link>
+          </>
+        ))}
       </div>
-    </section>
+    </div>
   );
 }
 

@@ -1,7 +1,7 @@
-function BookInfo() {
+function BookInfo({ book }) {
   return (
     <section>
-      <div>{/* BookInfo */}</div>
+      <div>{book.title}</div>
     </section>
   );
 }

@@ -6,7 +6,9 @@ function AppLayout() {
   return (
     <>
       <Navbar />
-      <Outlet />
+      <main className="bg-white">
+        <Outlet />
+      </main>
       <Footer />
     </>
   );

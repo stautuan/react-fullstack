@@ -9,7 +9,7 @@ function BookItem({ book }) {
       </div>
       <p className="text-sm font-medium">{book.title}</p>
       <p className="text-xs">{book.author}</p>
-      <p className="py-2 text-xl">{book.price}</p>
+      <p className="py-2 text-xl">{book.unitPrice}</p>
     </article>
   );
 }
