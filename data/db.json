@@ -1,18 +1,6 @@
 {
   "books": [
     {
-      "id": 0,
-      "title": "Leonardo da Vinci",
-      "author": "Walter Isaacson",
-      "category": ["Biography", "History"],
-      "format": "Paperback",
-      "pageCount": 600,
-      "unitPrice": "$3.00",
-      "imgUrl": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1523543570i/34684622.jpg",
-      "description": "Brunch raclette vexillologist post-ironic glossier ennui XOXO mlkshk godard pour-over blog tumblr humblebrag. Blue bottle put a bird on it twee prism biodiesel brooklyn. Blue bottle ennui tbh succulents.",
-      "condition": "Like New"
-    },
-    {
       "id": 1,
       "title": "Dune",
       "author": "Frank Herbert",

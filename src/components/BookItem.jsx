@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 function BookItem({ book }) {
   return (
     <article>
-      <Link to="books/:bookId">
+      <Link to={`/books/${book.id}`}>
         <div className="mb-3 flex place-content-center bg-neutral-100 py-4">
           <img
             src={book.imgUrl}
