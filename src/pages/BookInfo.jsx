@@ -23,8 +23,39 @@ function BookInfo() {
   return (
     <section>
       {book ? (
-        <div>
-          <p>This is {book.title}</p>
+        <div className="container mx-auto grid grid-cols-2 gap-8 px-4 py-20">
+          <figure className="flex items-center justify-center bg-neutral-100 py-16">
+            <img
+              className="block h-60 w-40 object-cover"
+              src={book.imgUrl}
+              alt={`cover of ${book.title}`}
+            />
+          </figure>
+          <div className="flex flex-col justify-between">
+            <div>
+              <p className="text-2xl font-medium">{book.title}</p>
+              <p className="text-xl font-medium">{book.author}</p>
+            </div>
+            <div>
+              <p className="text-xl font-bold text-green-600">
+                {book.unitPrice}
+              </p>
+              <p>Condition: {book.condition}</p>
+            </div>
+            <div>
+              <p>{book.category[0]}</p>
+              <p>
+                {book.format}, {book.pageCount} pages
+              </p>
+            </div>
+            <p>{book.description}</p>
+            <button
+              className="rounded-sm bg-zinc-800 py-4 text-sm font-bold uppercase tracking-wider text-white hover:bg-zinc-950"
+              type="button"
+            >
+              Add to bag
+            </button>
+          </div>
         </div>
       ) : (
         "Hi"
