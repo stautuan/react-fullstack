@@ -21,26 +21,28 @@ function BookInfo() {
   }, [id]);
 
   return (
-    <section className="h-[87.4vh]">
+    <section>
       {book ? (
         <div className="container mx-auto gap-8 px-4 py-20 lg:grid lg:grid-cols-2">
-          <figure className="mb-8 flex items-center justify-center bg-neutral-100 py-16">
+          <figure className="mb-8 flex items-center justify-center bg-neutral-100 py-16 lg:mb-0">
             <img
               className="block h-60 w-40 object-cover"
               src={book.imgUrl}
               alt={`cover of ${book.title}`}
             />
           </figure>
-          <div className="flex flex-col justify-between">
+          <div className="flex flex-col gap-4 lg:justify-between lg:gap-0">
             <div>
-              <p className="text-2xl font-medium">{book.title}</p>
+              <p className="text-2xl font-semibold">{book.title}</p>
               <p className="text-xl font-medium">{book.author}</p>
             </div>
             <div>
               <p className="text-2xl font-bold text-green-600">
                 {book.unitPrice}
               </p>
-              <p>Condition: {book.condition}</p>
+              <p>
+                Condition: <span className="font-medium">{book.condition}</span>
+              </p>
             </div>
             <div>
               <p>{book.category[0]}</p>
