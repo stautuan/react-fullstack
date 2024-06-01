@@ -21,10 +21,10 @@ function BookInfo() {
   }, [id]);
 
   return (
-    <section>
+    <section className="h-[87.4vh]">
       {book ? (
-        <div className="container mx-auto grid grid-cols-2 gap-8 px-4 py-20">
-          <figure className="flex items-center justify-center bg-neutral-100 py-16">
+        <div className="container mx-auto gap-8 px-4 py-20 lg:grid lg:grid-cols-2">
+          <figure className="mb-8 flex items-center justify-center bg-neutral-100 py-16">
             <img
               className="block h-60 w-40 object-cover"
               src={book.imgUrl}
@@ -37,7 +37,7 @@ function BookInfo() {
               <p className="text-xl font-medium">{book.author}</p>
             </div>
             <div>
-              <p className="text-xl font-bold text-green-600">
+              <p className="text-2xl font-bold text-green-600">
                 {book.unitPrice}
               </p>
               <p>Condition: {book.condition}</p>
@@ -48,9 +48,9 @@ function BookInfo() {
                 {book.format}, {book.pageCount} pages
               </p>
             </div>
-            <p>{book.description}</p>
+            <p className="pb-8">{book.description}</p>
             <button
-              className="rounded-sm bg-zinc-800 py-4 text-sm font-bold uppercase tracking-wider text-white hover:bg-zinc-950"
+              className="rounded bg-zinc-800 py-3 text-xs font-bold uppercase tracking-wider text-white hover:bg-zinc-950"
               type="button"
             >
               Add to bag
