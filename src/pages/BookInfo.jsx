@@ -21,7 +21,7 @@ function BookInfo() {
   }, [id]);
 
   return (
-    <section>
+    <section className="h-screen">
       {book ? (
         <div className="container mx-auto gap-8 px-4 py-20 lg:grid lg:grid-cols-2">
           <figure className="mb-8 flex items-center justify-center bg-neutral-100 py-16 lg:mb-0">
