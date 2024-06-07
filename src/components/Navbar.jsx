@@ -37,7 +37,10 @@ function Navbar() {
             <Link to="/">.bookstore</Link>
           </h1>
           <SearchBar />
-          <button onClick={toggleLinks}>
+          <button
+            className="transition-all hover:rotate-90"
+            onClick={toggleLinks}
+          >
             <List size={32} />
           </button>
         </div>
@@ -49,7 +52,7 @@ function Navbar() {
                 return (
                   <li
                     key={id}
-                    className="px-2 py-1 hover:rounded hover:bg-neutral-300 hover:px-3"
+                    className="px-2 py-1 transition-all hover:rounded hover:bg-neutral-300 hover:px-3"
                   >
                     <Link to={url}>{text || icon}</Link>
                   </li>
