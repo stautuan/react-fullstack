@@ -2,7 +2,7 @@ import { MagnifyingGlass } from "@phosphor-icons/react";
 
 function SearchBar() {
   return (
-    <div className="order-last mr-auto flex w-full rounded-full border-2 border-neutral-300 sm:order-none sm:ml-5 sm:w-72">
+    <div className="mx-2 flex w-full rounded-full border-2 border-neutral-300 sm:order-none sm:ml-5 sm:mr-auto sm:w-72">
       <input
         type="text"
         placeholder="Search books, author, genre..."

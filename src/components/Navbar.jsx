@@ -30,9 +30,9 @@ function Navbar() {
 
   return (
     <nav className="border-b-2 border-neutral-300 bg-neutral-200 shadow">
-      <div className="container mx-auto">
+      <div className=" container mx-auto">
         <div className="flex items-center justify-between p-4">
-          <h1 className="text-2xl font-medium text-neutral-500">
+          <h1 className="text-xl font-medium text-neutral-500 sm:text-2xl">
             <Link to="/">.bookstore</Link>
           </h1>
           <SearchBar />
@@ -42,33 +42,39 @@ function Navbar() {
               return (
                 <li
                   key={id}
-                  className="px-2 py-1 hover:rounded hover:bg-neutral-300 hover:px-3"
+                  className="px-2 py-1 hover:rounded hover:bg-neutral-300"
                 >
                   <Link to={url}>{text || icon}</Link>
                 </li>
               );
             })}
           </ul>
-          <button className="lg:hidden" onClick={toggleLinks}>
+          <button
+            className="transition-all hover:rotate-90 lg:hidden"
+            onClick={toggleLinks}
+          >
             <List size={32} />
           </button>
         </div>
-        <div>
-          {showLinks && (
-            <ul className="px-4 py-2 font-medium text-neutral-500">
-              {links.map((link) => {
-                const { id, url, text, icon } = link;
-                return (
-                  <li
-                    key={id}
-                    className="px-2 py-1 hover:rounded hover:bg-neutral-300 hover:px-3"
-                  >
-                    <Link to={url}>{text || icon}</Link>
-                  </li>
-                );
-              })}
-            </ul>
-          )}
+
+        <div
+          className={`fixed left-0 top-0 h-full w-[60%] bg-white bg-blend-darken shadow-xl transition-transform duration-500 ease-in-out sm:w-[40%] ${
+            showLinks ? "translate-x-0" : "-translate-x-full "
+          } border-r-2 border-neutral-100 lg:hidden`}
+        >
+          <ul className="px-4 py-10 font-medium text-neutral-500 sm:px-8 sm:py-20">
+            {links.map((link) => {
+              const { id, url, text, icon } = link;
+              return (
+                <li
+                  key={id}
+                  className="px-2 py-2 transition-all hover:rounded hover:bg-rose-200 hover:px-3"
+                >
+                  <Link to={url}>{text || icon}</Link>
+                </li>
+              );
+            })}
+          </ul>
         </div>
       </div>
     </nav>
