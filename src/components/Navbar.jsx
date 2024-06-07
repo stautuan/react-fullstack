@@ -1,36 +1,43 @@
-import { Bag, List } from "@phosphor-icons/react";
-import SearchBar from "./SearchBar";
-import { Link } from "react-router-dom";
 import { useState } from "react";
+import { Link } from "react-router-dom";
+
+import SearchBar from "./SearchBar";
+import { Bag, List } from "@phosphor-icons/react";
 
 function Navbar() {
-  const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
+  const [showLinks, setShowLinks] = useState(false);
+
+  function toggleLinks() {
+    setShowLinks(!showLinks);
+  }
 
   return (
-    <nav className="sticky top-0 border-b-2 border-neutral-300 bg-neutral-200 shadow">
-      <div className="container mx-auto flex flex-wrap items-center justify-between p-4 sm:flex-nowrap">
-        <h1 className="text-2xl font-medium text-neutral-500">
-          <Link to="/">bookstore.</Link>
-        </h1>
-        <SearchBar />
-        <button
-          className="lg:hidden"
-          type="button"
-          onClick={() => setIsMobileNavOpen(!isMobileNavOpen)}
-        >
-          <List size={26} weight="bold" />
-        </button>
-        <ul className="-mr-2 hidden font-medium text-neutral-500 lg:flex lg:items-center lg:gap-x-5">
-          <li className="px-2 py-1">
-            <Link to="/books">Books</Link>
-          </li>
-          <li className="px-2 py-1">
-            <Link to="/about">About</Link>
-          </li>
-          <li className="px-2 py-1">
-            <Bag size={26} />
-          </li>
-        </ul>
+    <nav>
+      <div className="border-b-2 border-neutral-300 bg-neutral-200 shadow">
+        <div className="flex items-center justify-between p-4">
+          <h1 className="text-2xl font-medium text-neutral-500">
+            <Link to="/">.bookstore</Link>
+          </h1>
+          <SearchBar />
+          <button onClick={toggleLinks}>
+            <List size={32} />
+          </button>
+        </div>
+        {showLinks && (
+          <div>
+            <ul className="px-4 py-2 font-medium text-neutral-500">
+              <li className="px-2 py-1 hover:rounded hover:bg-neutral-300 hover:px-3">
+                <Link to="/books">Books</Link>
+              </li>
+              <li className="px-2 py-1 hover:rounded hover:bg-neutral-300 hover:px-3">
+                <Link to="/about">About</Link>
+              </li>
+              <li className="px-2 py-1 hover:rounded hover:bg-neutral-300 hover:px-3">
+                <Bag size={26} />
+              </li>
+            </ul>
+          </div>
+        )}
       </div>
     </nav>
   );
