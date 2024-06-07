@@ -70,7 +70,9 @@ function Navbar() {
                   key={id}
                   className="px-2 py-2 transition-all hover:rounded hover:bg-rose-200 hover:px-3"
                 >
-                  <Link to={url}>{text || icon}</Link>
+                  <Link to={url} onClick={toggleLinks}>
+                    {text || icon}
+                  </Link>
                 </li>
               );
             })}
