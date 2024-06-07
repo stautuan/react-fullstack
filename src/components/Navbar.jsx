@@ -12,8 +12,8 @@ function Navbar() {
   }
 
   return (
-    <nav>
-      <div className="border-b-2 border-neutral-300 bg-neutral-200 shadow">
+    <nav className="border-b-2 border-neutral-300 bg-neutral-200 shadow">
+      <div className="container mx-auto">
         <div className="flex items-center justify-between p-4">
           <h1 className="text-2xl font-medium text-neutral-500">
             <Link to="/">.bookstore</Link>
