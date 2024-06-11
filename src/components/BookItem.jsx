@@ -1,18 +1,21 @@
 import { Link } from "react-router-dom";
+import { formatPrice } from "../utils";
 
 function BookItem({ book }) {
+  const { id, imgUrl, title, author, unitPrice } = book;
+  const dollarsAmount = formatPrice(unitPrice);
   return (
     <article>
-      <Link to={`/books/${book.id}`}>
+      <Link to={`/books/${id}`}>
         <div className="mb-3 flex place-content-center bg-neutral-100 py-4">
           <img
-            src={book.imgUrl}
+            src={imgUrl}
             className="block h-60 w-[9.5rem] bg-neutral-300 object-cover"
           />
         </div>
-        <p className="text-sm font-medium">{book.title}</p>
-        <p className="text-xs">{book.author}</p>
-        <p className="py-2 text-xl">{book.unitPrice}</p>
+        <p className="text-sm font-medium">{title}</p>
+        <p className="text-xs">{author}</p>
+        <p className="py-2 text-xl">{dollarsAmount}</p>
       </Link>
     </article>
   );
