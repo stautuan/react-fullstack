@@ -15,6 +15,7 @@ function BookInfo() {
     pageCount,
     description,
   } = book;
+
   const dollarsAmount = formatPrice(unitPrice);
 
   return (

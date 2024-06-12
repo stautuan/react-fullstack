@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import SearchBar from "./SearchBar";
 import { Bag, List } from "@phosphor-icons/react";
 
@@ -23,7 +23,7 @@ function Navbar() {
     },
     {
       id: 3,
-      url: "/",
+      url: "/cart",
       icon: <Bag size={26} />,
     },
   ];
@@ -43,7 +43,16 @@ function Navbar() {
                 key={id}
                 className="px-2 py-1 hover:rounded hover:bg-neutral-300"
               >
-                <Link to={url}>{text || icon}</Link>
+                <NavLink
+                  to={url}
+                  className={({ isActive }) =>
+                    isActive
+                      ? "rounded text-neutral-700"
+                      : "hover:rounded hover:bg-neutral-300"
+                  }
+                >
+                  {text || icon}
+                </NavLink>
               </li>
             );
           })}
@@ -69,9 +78,9 @@ function Navbar() {
                 key={id}
                 className="px-2 py-2 transition-all hover:rounded hover:bg-rose-200 hover:px-3"
               >
-                <Link className="block" to={url} onClick={toggleLinks}>
+                <NavLink className="block" to={url} onClick={toggleLinks}>
                   {text || icon}
-                </Link>
+                </NavLink>
               </li>
             );
           })}
