@@ -1,22 +1,10 @@
-import { useEffect, useState } from "react";
 import BookItem from "../components/BookItem";
+import { useLoaderData } from "react-router-dom";
+import { getBooks } from "../utils";
 
 function Books() {
-  const [books, setBooks] = useState([]);
-  // const [selectedBook, onSelectedBook] = useState(null);
+  const books = useLoaderData();
 
-  useEffect(() => {
-    async function getBooks() {
-      try {
-        const response = await fetch("http://localhost:8000/books");
-        const data = await response.json();
-        setBooks(data);
-      } catch (error) {
-        console.error(error);
-      }
-    }
-    getBooks();
-  }, []);
   return (
     <div className="container mx-auto px-4 pb-32">
       <h3 className="py-20 text-center text-xl font-medium">Books</h3>
@@ -27,6 +15,11 @@ function Books() {
       </div>
     </div>
   );
+}
+
+export async function loader() {
+  const books = await getBooks();
+  return books;
 }
 
 export default Books;

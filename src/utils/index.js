@@ -1,5 +1,13 @@
+const BASE_URL = "http://localhost:8000/books";
+
+export async function getBooks() {
+  const response = await fetch(`${BASE_URL}`);
+  const data = await response.json();
+  return data;
+}
+
 export async function getFeaturedBooks() {
-  const response = await fetch("http://localhost:8000/books?_start=0&_limit=4");
+  const response = await fetch(`${BASE_URL}?_start=0&_limit=4`);
   const data = await response.json();
   return data;
 }
