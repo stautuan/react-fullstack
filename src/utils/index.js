@@ -12,6 +12,13 @@ export async function getFeaturedBooks() {
   return data;
 }
 
+export async function getBook(id) {
+  const response = await fetch(`${BASE_URL}?id=${id}`);
+  const data = await response.json();
+  const bookData = data[0];
+  return bookData;
+}
+
 export function formatPrice(unitPrice) {
   const dollarsAmount = new Intl.NumberFormat("en-CA", {
     style: "currency",

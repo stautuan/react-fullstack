@@ -4,7 +4,7 @@ import { formatPrice } from "../utils";
 function BookItem({ book }) {
   const { id, imgUrl, title, author, unitPrice } = book;
   const dollarsAmount = formatPrice(unitPrice);
-  
+
   return (
     <article>
       <Link to={`/books/${id}`}>
