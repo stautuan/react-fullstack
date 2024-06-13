@@ -1,19 +1,19 @@
-const BASE_URL = "http://localhost:3004/books";
+const BASE_URL = "http://localhost:3004";
 
 export async function getBooks() {
-  const response = await fetch(`${BASE_URL}`);
+  const response = await fetch(`${BASE_URL}/books`);
   const data = await response.json();
   return data;
 }
 
 export async function getFeaturedBooks() {
-  const response = await fetch(`${BASE_URL}?_start=0&_limit=4`);
+  const response = await fetch(`${BASE_URL}/books?_start=0&_limit=4`);
   const data = await response.json();
   return data;
 }
 
 export async function getBook(id) {
-  const response = await fetch(`${BASE_URL}?id=${id}`);
+  const response = await fetch(`${BASE_URL}/books?id=${id}`);
   const data = await response.json();
   const bookData = data[0];
   return bookData;
