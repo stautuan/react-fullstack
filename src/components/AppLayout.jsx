@@ -7,7 +7,7 @@ function AppLayout() {
     <>
       <Navbar />
       <main className="bg-white">
-        <Outlet />
+        <Outlet className="h-full md:h-screen" />
       </main>
       <Footer />
     </>

@@ -19,12 +19,12 @@ function BookInfo() {
   const dollarsAmount = formatPrice(unitPrice);
 
   return (
-    <section className="h-screen">
+    <section>
       {book ? (
         <div className="container mx-auto gap-8 px-4 py-20 lg:grid lg:grid-cols-2">
           <figure className="mb-8 flex items-center justify-center bg-neutral-100 py-16 lg:mb-0">
             <img
-              className="block h-60 w-40 object-cover"
+              className="block h-64 w-40 object-cover"
               src={imgUrl}
               alt={`cover of ${title}`}
             />
