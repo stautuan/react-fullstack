@@ -1,4 +1,4 @@
-const BASE_URL = "http://localhost:3004/books";
+const BASE_URL = "https://your-vercel-app.vercel.app/books";
 
 export async function getBooks() {
   const response = await fetch(`${BASE_URL}`);
