@@ -15,16 +15,17 @@ import Cart from "./pages/Cart";
 const router = createBrowserRouter([
   {
     element: <AppLayout />,
-    errorElement: <Error />,
     children: [
       {
         path: "/",
         element: <Home />,
+        errorElement: <Error />,
         loader: featuredBooksLoader,
       },
       {
         path: "books",
         element: <Books />,
+        errorElement: <Error />,
         loader: booksLoader,
       },
       {
@@ -34,11 +35,13 @@ const router = createBrowserRouter([
       {
         path: "books/:id",
         element: <BookInfo />,
+        errorElement: <Error />,
         loader: bookInfoLoader,
       },
       {
         path: "cart",
         element: <Cart />,
+        errorElement: <Error />,
       },
     ],
   },
