@@ -1,4 +1,4 @@
-const BASE_URL = "/api/books";
+const BASE_URL = "/.netlify/functions/books";
 
 export async function getBooks() {
   const response = await fetch(`${BASE_URL}`);
