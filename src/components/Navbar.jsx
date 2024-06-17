@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import SearchBar from "./SearchBar";
-import { Bag, List } from "@phosphor-icons/react";
+import { Bag, Heart, List } from "@phosphor-icons/react";
 
 function Navbar() {
   const [showLinks, setShowLinks] = useState(false);
@@ -23,6 +23,11 @@ function Navbar() {
     },
     {
       id: 3,
+      url: "/likes",
+      icon: <Heart size={26} />,
+    },
+    {
+      id: 4,
       url: "/cart",
       icon: <Bag size={26} />,
     },
@@ -30,12 +35,12 @@ function Navbar() {
 
   return (
     <nav className="border-b-2 border-neutral-300 bg-neutral-200 shadow">
-      <div className="container mx-auto flex items-center justify-between p-4">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-8 py-4">
         <h1 className="text-xl font-medium text-neutral-500 sm:text-2xl">
           <Link to="/">.bookstore</Link>
         </h1>
         <SearchBar />
-        <ul className="hidden px-4 py-2 font-medium text-neutral-500 lg:flex lg:items-center">
+        <ul className="hidden gap-2 px-4 py-2 font-medium text-neutral-500 lg:flex lg:items-center">
           {links.map((link) => {
             const { id, url, text, icon } = link;
             return (
