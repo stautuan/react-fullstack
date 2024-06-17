@@ -1,16 +1,17 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
-import Home from "./pages/Home";
 import AppLayout from "./components/AppLayout";
+import Home from "./pages/Home";
 import Books from "./pages/Books";
 import About from "./pages/About";
 import BookInfo from "./pages/BookInfo";
 import Error from "./pages/Error";
+import Likes from "./pages/Likes";
+import Cart from "./pages/Cart";
 
 import { loader as featuredBooksLoader } from "./components/BookList";
 import { loader as booksLoader } from "./pages/Books";
 import { loader as bookInfoLoader } from "./pages/BookInfo";
-import Cart from "./pages/Cart";
 
 const router = createBrowserRouter([
   {
@@ -37,6 +38,11 @@ const router = createBrowserRouter([
         element: <BookInfo />,
         errorElement: <Error />,
         loader: bookInfoLoader,
+      },
+      {
+        path: "likes",
+        element: <Likes />,
+        errorElement: <Error />,
       },
       {
         path: "cart",
