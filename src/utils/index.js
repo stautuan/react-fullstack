@@ -7,7 +7,7 @@ export async function getBooks() {
 }
 
 export async function getFeaturedBooks() {
-  const response = await fetch(`${BASE_URL}/books?_start=0&_limit=4`);
+  const response = await fetch(`${BASE_URL}/books?_start=0&_limit=5`);
   const data = await response.json();
   return data;
 }
