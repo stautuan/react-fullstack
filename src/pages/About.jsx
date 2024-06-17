@@ -1,6 +1,6 @@
 function About() {
   return (
-    <div className="container mx-auto px-4 py-20">
+    <div className="mx-auto max-w-7xl px-8 py-20">
       <p>
         I'm sorry, what were you asking me? Oh, yes, that stupid plastic
         container I asked you to buy. You see, hydrofluoric acid won't eat

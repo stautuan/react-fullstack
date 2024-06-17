@@ -14,7 +14,7 @@ function SearchBar() {
   }
 
   return (
-    <div className="mx-2 flex w-full rounded-full border-2 border-neutral-300 sm:order-none sm:ml-5 sm:mr-auto sm:w-fit">
+    <div className="mx-2 flex w-full rounded-full sm:order-none sm:ml-5 sm:mr-auto sm:w-fit">
       <input
         type="search"
         value={query}

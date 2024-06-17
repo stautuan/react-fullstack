@@ -40,7 +40,7 @@ function Navbar() {
           <Link to="/">.bookstore</Link>
         </h1>
         <SearchBar />
-        <ul className="hidden gap-2 px-4 py-2 font-medium text-neutral-100 lg:flex lg:items-center">
+        <ul className="-mr-6 hidden gap-2 px-4 py-2 font-medium text-neutral-100 lg:flex lg:items-center">
           {links.map((link) => {
             const { id, url, text, icon } = link;
             return (
