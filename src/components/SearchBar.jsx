@@ -14,12 +14,12 @@ function SearchBar() {
   }
 
   return (
-    <div className="mx-2 flex w-full rounded-full border-2 border-neutral-300 sm:order-none sm:ml-5 sm:mr-auto sm:w-72">
+    <div className="mx-2 flex w-full rounded-full border-2 border-neutral-300 sm:order-none sm:ml-5 sm:mr-auto sm:w-fit">
       <input
         type="search"
         value={query}
         placeholder="Search books, author, genre..."
-        className="w-full rounded-l-full px-4 py-1 placeholder:text-sm sm:w-60"
+        className="h-11 w-full rounded-l-full px-4 py-1 placeholder:text-sm sm:w-96"
         onChange={handleSubmit}
       />
       <button
