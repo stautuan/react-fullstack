@@ -8,7 +8,7 @@ function Books() {
   return (
     <div className="mx-auto max-w-7xl px-8 pb-32">
       <h3 className="py-20 text-center text-xl font-medium">Books</h3>
-      <div className="grid grid-cols-2 gap-x-3 gap-y-8 md:grid-cols-4">
+      <div className="grid grid-cols-2 gap-x-2 gap-y-8 md:grid-cols-4">
         {books.map((book) => (
           <BookItem key={book.id} book={book} />
         ))}

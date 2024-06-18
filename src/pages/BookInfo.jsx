@@ -24,7 +24,7 @@ function BookInfo() {
         <div className="container mx-auto gap-8 px-4 py-20 lg:grid lg:grid-cols-2">
           <figure className="mb-8 flex items-center justify-center bg-neutral-100 py-16 lg:mb-0">
             <img
-              className="block h-64 w-40 object-cover"
+              className="block h-80 w-52 rounded-l-sm rounded-r-2xl object-cover"
               src={imgUrl}
               alt={`cover of ${title}`}
             />
@@ -50,7 +50,7 @@ function BookInfo() {
             </div>
             <p className="pb-8">{description}</p>
             <button
-              className="rounded bg-zinc-800 py-3 text-xs font-bold uppercase tracking-wider text-white hover:bg-zinc-950"
+              className="self-start rounded bg-zinc-800 px-10 py-3 text-xs font-bold uppercase tracking-wider text-white hover:bg-zinc-950"
               type="button"
               onClick={() => console.log("add to bag")}
             >
