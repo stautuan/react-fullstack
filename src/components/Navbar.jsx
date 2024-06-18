@@ -63,7 +63,7 @@ function Navbar() {
           })}
         </ul>
         <button
-          className="px-2 py-3 text-neutral-100 transition-all hover:rotate-90 lg:hidden"
+          className="-mr-3 px-2 py-3 text-neutral-100 transition-all hover:rotate-90 lg:hidden"
           onClick={toggleLinks}
         >
           <List size={26} />
@@ -81,7 +81,7 @@ function Navbar() {
             return (
               <li
                 key={id}
-                className="px-2 py-2 transition-all hover:rounded hover:bg-rose-200 hover:px-3"
+                className="px-2 py-2 transition-all hover:rounded hover:bg-neutral-800 hover:px-3 hover:text-neutral-100"
               >
                 <NavLink className="block" to={url} onClick={toggleLinks}>
                   {text || icon}

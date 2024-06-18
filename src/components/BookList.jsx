@@ -10,7 +10,7 @@ function BookList() {
   return (
     <div className="mx-auto max-w-7xl px-8 pb-32">
       <h3 className="py-20 text-center text-xl font-medium">Featured Books</h3>
-      <div className="grid gap-x-2 gap-y-8 sm:grid-cols-2 lg:grid-cols-4 ">
+      <div className="grid grid-cols-2 gap-x-2 gap-y-8 lg:grid-cols-4 ">
         {featuredBooks.map((book) => (
           <BookItem
             key={book.id}
