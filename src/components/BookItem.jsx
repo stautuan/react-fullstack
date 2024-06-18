@@ -15,9 +15,9 @@ function BookItem({ book }) {
           />
         </div>
         <div className="flex flex-col gap-1">
-          <p className="font-serif text-sm font-semibold">{title}</p>
-          <p className="text-xs font-semibold leading-5">by {author}</p>
-          <p className="font-serif text-l font-semibold">{dollarsAmount}</p>
+          <p className="text-md font-semibold">{title}</p>
+          <p className="text-xs leading-4">by {author}</p>
+          <p className="text-xl font-medium">{dollarsAmount}</p>
         </div>
       </Link>
     </article>

@@ -31,8 +31,8 @@ function BookInfo() {
           </figure>
           <div className="flex flex-col gap-4 lg:justify-between lg:gap-0">
             <div>
-              <p className="font-serif mb-2 text-2xl font-bold">{title}</p>
-              <p className="text-l font-semibold">{author}</p>
+              <p className="mb-2 font-serif text-2xl font-bold">{title}</p>
+              <p className="text-l font-medium">{author}</p>
             </div>
             <p>{description}</p>
             <div className="pb-8">
