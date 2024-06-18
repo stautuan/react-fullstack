@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 html {
-  @apply bg-neutral-200 text-neutral-900 antialiased;
+  @apply bg-neutral-900 font-sans font-medium text-neutral-700 antialiased;
 }

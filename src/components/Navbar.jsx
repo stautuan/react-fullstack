@@ -24,23 +24,23 @@ function Navbar() {
     {
       id: 3,
       url: "/likes",
-      icon: <Heart size={26} />,
+      icon: <Heart size={24} />,
     },
     {
       id: 4,
       url: "/cart",
-      icon: <Bag size={26} />,
+      icon: <Bag size={24} />,
     },
   ];
 
   return (
-    <nav className="border-b-2 border-neutral-300 bg-neutral-950 shadow">
+    <nav className="border-b-2 border-neutral-300 bg-neutral-900 shadow">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-8 py-4">
-        <h1 className="text-xl font-medium text-neutral-100 sm:text-2xl">
+        <h1 className="font-serif text-xl font-medium text-neutral-100 sm:text-2xl">
           <Link to="/">.bookstore</Link>
         </h1>
         <SearchBar />
-        <ul className="-mr-6 hidden gap-2 px-4 py-2 font-medium text-neutral-100 lg:flex lg:items-center">
+        <ul className="-mr-6 hidden gap-2 px-4 py-2 font-sans font-bold text-neutral-400 lg:flex lg:items-center">
           {links.map((link) => {
             const { id, url, text, icon } = link;
             return (
@@ -52,7 +52,7 @@ function Navbar() {
                   to={url}
                   className={({ isActive }) =>
                     isActive
-                      ? "rounded font-bold text-yellow-700"
+                      ? "rounded font-bold text-neutral-100"
                       : "hover:rounded hover:bg-neutral-800"
                   }
                 >
