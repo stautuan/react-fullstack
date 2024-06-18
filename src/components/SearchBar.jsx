@@ -14,16 +14,16 @@ function SearchBar() {
   }
 
   return (
-    <div className="mx-2 flex w-full rounded-full sm:order-none sm:ml-5 sm:mr-auto sm:w-fit">
+    <div className="order-last flex w-full rounded border-2 border-white bg-white sm:order-none sm:ml-5 sm:mr-auto sm:w-fit">
       <input
         type="search"
         value={query}
         placeholder="Search books, author, genre..."
-        className="h-11 w-full rounded-l-full px-4 py-1 placeholder:text-sm sm:w-96"
+        className="w-full rounded-l px-4 py-1 placeholder:text-sm sm:w-96"
         onChange={handleSubmit}
       />
       <button
-        className="cursor-pointer rounded-r-full bg-white px-3 py-1 text-neutral-400"
+        className="cursor-pointer rounded-r bg-white px-3 py-1 text-neutral-400"
         aria-label="Search"
       >
         <MagnifyingGlass size={20} weight="bold" />
