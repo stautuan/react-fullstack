@@ -1,6 +1,6 @@
-import { MagnifyingGlass } from "@phosphor-icons/react";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { MagnifyingGlass } from "@phosphor-icons/react";
 
 function SearchBar() {
   const [query, setQuery] = useState("");
@@ -14,12 +14,12 @@ function SearchBar() {
   }
 
   return (
-    <div className="order-last flex w-full rounded border-2 border-white bg-white sm:order-none sm:ml-5 sm:mr-auto sm:w-fit">
+    <div className="order-last flex w-full rounded border-2 border-white bg-white md:order-none md:ml-5 md:mr-auto md:w-fit">
       <input
         type="search"
         value={query}
         placeholder="Search books, author, genre..."
-        className="w-full rounded-l px-4 py-1 placeholder:text-sm sm:w-96"
+        className="w-full rounded-l px-4 py-1 placeholder:text-sm md:w-96"
         onChange={handleSubmit}
       />
       <button

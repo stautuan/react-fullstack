@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { Bag, List } from "@phosphor-icons/react";
+
 import SearchBar from "./SearchBar";
-import { Bag, Heart, List } from "@phosphor-icons/react";
 
 function Navbar() {
   const [showLinks, setShowLinks] = useState(false);
@@ -21,32 +22,22 @@ function Navbar() {
       url: "/about",
       text: "About",
     },
-    {
-      id: 3,
-      url: "/likes",
-      icon: <Heart size={24} />,
-    },
-    {
-      id: 4,
-      url: "/cart",
-      icon: <Bag size={24} />,
-    },
   ];
 
   return (
     <nav className="border-b-2 border-neutral-300 bg-neutral-900 shadow">
-      <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between px-8 py-4 sm:flex-nowrap">
-        <h1 className="text-xl font-medium text-neutral-100 sm:text-2xl">
+      <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between px-8 py-4 md:flex-nowrap">
+        <h1 className="flex-1 text-xl font-medium text-neutral-100 sm:text-2xl md:flex-none">
           <Link to="/">.bookstore</Link>
         </h1>
         <SearchBar />
-        <ul className="-mr-6 hidden gap-2 px-4 py-2 font-medium text-neutral-400 lg:flex lg:items-center">
+        <ul className="-mr-2 gap-2 px-4 py-2 font-medium text-neutral-400 lg:flex lg:items-center">
           {links.map((link) => {
             const { id, url, text, icon } = link;
             return (
               <li
                 key={id}
-                className="px-2 py-1 hover:rounded hover:bg-neutral-800"
+                className="hidden px-2 py-1 hover:rounded hover:bg-neutral-800 lg:flex"
               >
                 <NavLink
                   to={url}
@@ -61,12 +52,17 @@ function Navbar() {
               </li>
             );
           })}
+          <li className="px-2 py-1 hover:rounded hover:bg-neutral-800">
+            <NavLink to="/cart">
+              <Bag size={24} />
+            </NavLink>
+          </li>
         </ul>
         <button
           className="-mr-3 px-2 py-3 text-neutral-100 transition-all hover:rotate-90 lg:hidden"
           onClick={toggleLinks}
         >
-          <List size={26} />
+          <List size={24} />
         </button>
       </div>
 
